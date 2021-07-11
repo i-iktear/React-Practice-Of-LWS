@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const scaleNmae = {
+const scaleName = {
   c: "Celsius",
   f: "Fahrenheit",
 };
@@ -22,7 +22,7 @@ export default class TempInputComponent extends Component {
     return (
       <div>
         <fieldset>
-          <legend>Enter Temperature in {scaleNmae[scale]} </legend>
+          <legend>Enter Temperature in {scaleName[scale]} </legend>
           <input
             type="text"
             value={temperature}
