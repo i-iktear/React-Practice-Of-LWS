@@ -22,6 +22,7 @@ export default class Calculator extends Component {
       scale === "f" ? convert(temperature, toCelsius) : temperature;
     const fahrenheit =
       scale === "c" ? convert(temperature, toFahrenheit) : temperature;
+
     return (
       <div>
         <TempInputComponent
