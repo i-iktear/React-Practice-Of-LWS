@@ -2,9 +2,12 @@
 // import Form from "./components/Form";
 // import Calculator from "./components/Calculator";
 // import Text from "./components/inheritance/Text";
-import Text from "./components/composition/Text";
-import Emoji from "./components/composition/Emoji";
-import Bracket from "./components/composition/Bracket";
+// import Text from "./components/composition/Text";
+// import Emoji from "./components/composition/Emoji";
+// import Bracket from "./components/composition/Bracket";
+import ClickCounter from "./components/L13: High order Component/ClickCounter";
+import HoverCounter from "./components/L13: High order Component/HoverCounter";
+import InputCounter from "./components/L13: High order Component/InputCounter";
 
 function App() {
   // const quantity = [1, 2];
@@ -14,7 +17,7 @@ function App() {
       {/* <Form /> */}
       {/* <Calculator /> */}
 
-      <Emoji>
+      {/* <Emoji>
         {({ addEmoji }) => (
           <Bracket>
             {({ addBracket }) => (
@@ -22,7 +25,10 @@ function App() {
             )}
           </Bracket>
         )}
-      </Emoji>
+      </Emoji> */}
+      <ClickCounter />
+      <HoverCounter />
+      <InputCounter />
     </>
   );
 }
