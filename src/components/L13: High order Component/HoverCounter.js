@@ -1,5 +1,3 @@
-import withCounter from "./HOC/withCounter";
-
 const HoverCounter = ({ count, incrementCount }) => {
   return (
     <div>
@@ -10,4 +8,4 @@ const HoverCounter = ({ count, incrementCount }) => {
   );
 };
 
-export default withCounter(HoverCounter);
+export default HoverCounter;

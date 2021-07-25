@@ -1,34 +1,20 @@
-// import ClockList from "./components/ClockList";
-// import Form from "./components/Form";
-// import Calculator from "./components/Calculator";
-// import Text from "./components/inheritance/Text";
-// import Text from "./components/composition/Text";
-// import Emoji from "./components/composition/Emoji";
-// import Bracket from "./components/composition/Bracket";
 import ClickCounter from "./components/L13: High order Component/ClickCounter";
 import HoverCounter from "./components/L13: High order Component/HoverCounter";
-import InputCounter from "./components/L13: High order Component/InputCounter";
+import Counter from "./components/L14: react render props/Counter";
 
 function App() {
-  // const quantity = [1, 2];
   return (
     <>
-      {/* <ClockList quantity={quantity} /> */}
-      {/* <Form /> */}
-      {/* <Calculator /> */}
-
-      {/* <Emoji>
-        {({ addEmoji }) => (
-          <Bracket>
-            {({ addBracket }) => (
-              <Text addEmoji={addEmoji} addBracket={addBracket} />
-            )}
-          </Bracket>
+      <Counter>
+        {(count, incrementCount) => (
+          <ClickCounter count={count} incrementCount={incrementCount} />
         )}
-      </Emoji> */}
-      <ClickCounter />
-      <HoverCounter />
-      <InputCounter />
+      </Counter>
+      <Counter>
+        {(count, incrementCount) => (
+          <HoverCounter count={count} incrementCount={incrementCount} />
+        )}
+      </Counter>
     </>
   );
 }
