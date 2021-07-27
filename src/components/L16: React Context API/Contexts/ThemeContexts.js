@@ -1,7 +1,7 @@
-import createContext from "../lib/Context";
+import CreateContext from "../lib/Context";
 
-const themeContext = createContext({
+const ThemeContext = CreateContext({
   theme: "light",
 });
 
-export default themeContext;
+export default ThemeContext;

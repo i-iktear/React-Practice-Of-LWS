@@ -1,10 +1,9 @@
-import { Component } from "react";
+import React from "react";
 import ClickCounter from "./components/L13: High order Component/ClickCounter";
 import Counter from "./components/L14: react render props/Counter";
 import Section from "./components/L16: React Context API/Section";
 import ThemeContext from "./components/L16: React Context API/Contexts/ThemeContexts";
-
-export default class App extends Component {
+export default class App extends React.Component {
   state = {
     theme: "dark",
   };
@@ -18,7 +17,7 @@ export default class App extends Component {
           )}
         </Counter>
         <ThemeContext.Provider value={{ theme: theme }}>
-          <Section />
+          <Section theme={theme} />
         </ThemeContext.Provider>
       </>
     );

@@ -15,12 +15,12 @@ class Context {
   Consumer = ({ children }) => children(this.value);
 }
 
-function createContext(value = null) {
+function CreateContext(value = null) {
   const context = new Context(value);
   return {
-    provider: context.Provider,
+    Provider: context.Provider,
     Consumer: context.Consumer,
   };
 }
 
-export default createContext;
+export default CreateContext;

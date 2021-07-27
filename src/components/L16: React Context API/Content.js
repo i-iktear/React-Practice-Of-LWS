@@ -10,7 +10,6 @@ const Content = () => {
         {(count, incrementCount) => {
           return (
             <ThemeContext.Consumer>
-              {" "}
               {({ theme }) => (
                 <HoverCounter
                   count={count}
