@@ -1,4 +1,4 @@
-const HoverCounter = ({ count, incrementCount, theme }) => {
+const HoverCounter = ({ count, incrementCount, theme, switchTheme }) => {
   const style =
     theme === "dark"
       ? {
@@ -11,6 +11,7 @@ const HoverCounter = ({ count, incrementCount, theme }) => {
       <h1 type="button" style={style} onMouseOver={incrementCount}>
         Hovered {count} times
       </h1>
+      <button onClick={switchTheme}>Change color</button>
     </div>
   );
 };
