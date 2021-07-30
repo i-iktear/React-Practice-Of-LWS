@@ -1,14 +1,30 @@
-import React from "react";
-import Counter from "./Functional Components/useReducer/Counter";
-import ComplexCounter from "./Functional Components/useReducer/ComplexCounter";
-import CounterThree from "./Functional Components/useReducer/CounterThree";
+import React, { useReducer } from "react";
+import ComponentA from "./Functional Components/useReducer/ComponentA";
+
+export const counterContext = React.createContext();
+
+const initialState = 0;
+const reducer = (state, action) => {
+  switch (action) {
+    case "increase":
+      return state + 1;
+
+    case "decrease":
+      return state - 1;
+
+    default:
+      return state;
+  }
+};
 
 export default function App() {
+  const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="app">
-      <Counter />
-      <ComplexCounter />
-      <CounterThree />
+      <div> Count: {count} </div>
+      <counterContext.Provider value={{ dispatch: dispatch }}>
+        <ComponentA />
+      </counterContext.Provider>
     </div>
   );
 }
