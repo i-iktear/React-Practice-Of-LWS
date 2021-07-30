@@ -1,12 +1,14 @@
 import React from "react";
-import Form from "./Functional Components/useRef/Form";
-import Time from "./Functional Components/useRef/Time";
+import Counter from "./Functional Components/useReducer/Counter";
+import ComplexCounter from "./Functional Components/useReducer/ComplexCounter";
+import CounterThree from "./Functional Components/useReducer/CounterThree";
 
 export default function App() {
   return (
     <div className="app">
-      <Form />
-      <Time />
+      <Counter />
+      <ComplexCounter />
+      <CounterThree />
     </div>
   );
 }
