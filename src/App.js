@@ -1,12 +1,11 @@
 import React from "react";
-import GetPost from "./Functional Components/useReducer/GetPost";
-import Getpost2 from "./Functional Components/useReducer/Getpost2";
-
+import LayoutComponent from "./Functional Components/custom hook/LayoutComponent";
+import LayoutComponentTwo from "./Functional Components/custom hook/LayoutComponentTwo";
 export default function App() {
   return (
     <div className="app">
-      <GetPost />
-      <Getpost2 />
+      <LayoutComponent />
+      <LayoutComponentTwo />
     </div>
   );
 }
