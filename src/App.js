@@ -1,11 +1,11 @@
 import React from "react";
-import LayoutComponent from "./Functional Components/custom hook/LayoutComponent";
-import LayoutComponentTwo from "./Functional Components/custom hook/LayoutComponentTwo";
+import "./Functional Components/styled component/assets/css/dark.css";
+import Tutorial from "./Functional Components/styled component/Tutorial";
+
 export default function App() {
   return (
     <div className="app">
-      <LayoutComponent />
-      <LayoutComponentTwo />
+      <Tutorial />
     </div>
   );
 }
